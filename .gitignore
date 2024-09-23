@@ -2,3 +2,4 @@
 
 !.config/nvim/
 !.config/nvim/**
+!.config/VSCodium/User/settings.json
