@@ -2,7 +2,6 @@
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "editor.tabSize": 2,
-  "open-in-browser.default": "'Brave'",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -67,5 +66,10 @@
   "editor.lineNumbers": "relative",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
-  "editor.cursorBlinking": "smooth"
+  "editor.cursorBlinking": "smooth",
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  },
+  "terminal.integrated.fontFamily": "MesloLGS NF"
 }
