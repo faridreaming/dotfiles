@@ -1,0 +1,8 @@
+codeium.codeium
+esbenp.prettier-vscode
+gitpod.gitpod-theme
+ms-vscode.live-server
+pkief.material-icon-theme
+ritwickdey.liveserver
+techer.open-in-browser
+zhuangtongfa.material-theme
