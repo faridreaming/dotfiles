@@ -113,6 +113,6 @@ alias code-extensions="code --list-extensions > .config/VSCodium/User/extensions
 alias restart-server='sudo systemctl restart httpd; sudo systemctl restart php-fpm; sudo systemctl restart nginx'
 alias stop-server='sudo systemctl stop httpd; sudo systemctl stop php-fpm; sudo systemctl stop nginx'
 alias start-server='sudo systemctl start httpd; sudo systemctl start php-fpm; sudo systemctl start nginx'
-
+alias to-htdocs='cd /usr/share/nginx/html'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
