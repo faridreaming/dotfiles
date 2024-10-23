@@ -5,3 +5,5 @@ sudo pacman -S --noconfirm neovim xclip
 
 # Apply configs
 stow nvim
+
+echo "Neovim setup completed!"
