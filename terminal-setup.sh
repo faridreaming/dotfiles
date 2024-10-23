@@ -15,6 +15,6 @@ omf theme bobthefish
 chsh -s /usr/bin/fish
 
 # Apply configs
-stow --adopt kitty fish
+stow kitty fish
 
 echo "Some changes require a system reboot!"
