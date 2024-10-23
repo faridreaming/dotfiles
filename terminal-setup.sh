@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm kitty fish
 yay -S ttf-jetbrains-mono-nerd
 
 # Download shell fish theme
-curl -L https://get.oh-my.fish | fish 
+curl -L https://get.oh-my.fish | fish
 omf install bobthefish
 omf theme bobthefish
 
@@ -17,4 +17,5 @@ chsh -s /usr/bin/fish
 # Apply configs
 stow kitty fish
 
+echo "Terminal setup completed!"
 echo "Some changes require a system reboot!"
