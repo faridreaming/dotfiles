@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Download neovim
-sudo pacman -S --noconfirm neovim
+# Download neovim and its clipboard
+sudo pacman -S --noconfirm neovim xclip
 
 # Apply configs
 stow nvim
