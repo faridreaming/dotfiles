@@ -9,6 +9,7 @@ packages=(
   htop
   unzip
   tree
+  code
 )
 
 # Install all packages
