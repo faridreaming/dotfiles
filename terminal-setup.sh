@@ -15,7 +15,7 @@ omf theme bobthefish
 chsh -s /usr/bin/fish
 
 # Apply configs
-stow kitty fish
+stow kitty fish fastfetch
 
 echo "Terminal setup completed!"
 echo "Some changes require a system reboot!"
