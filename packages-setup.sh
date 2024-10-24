@@ -1,5 +1,15 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm spectle fastfetch nodejs htop
+# List of packages
+packages=(
+  spectle
+  fastfetch
+  nodejs
+  npm
+  htop
+)
+
+# Install all packages
+sudo pacman -S --noconfirm "${packages[@]}"
 
 echo "Packages setup completed!"
