@@ -7,6 +7,8 @@ packages=(
   nodejs
   npm
   htop
+  unzip
+  tree
 )
 
 # Install all packages
