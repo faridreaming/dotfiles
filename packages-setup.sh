@@ -10,6 +10,10 @@ packages=(
   unzip
   tree
   code
+  lazygit
+  ripgrep
+  fd
+  rust
 )
 
 # Install all packages
