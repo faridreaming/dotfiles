@@ -8,8 +8,8 @@ yay -S ttf-jetbrains-mono-nerd
 
 # Download shell fish theme
 curl -L https://get.oh-my.fish | fish
-omf install bobthefish
-omf theme bobthefish
+omf install agnoster
+omf theme agnoster
 
 # Change shell for user
 chsh -s /usr/bin/fish
