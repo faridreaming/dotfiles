@@ -2,6 +2,7 @@
 
 # List of packages
 packages=(
+  stow
   spectle
   fastfetch
   nodejs
