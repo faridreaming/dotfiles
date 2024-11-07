@@ -13,6 +13,10 @@ keymap.set("n", "<C-a>", "gg<S-v>G", opts)
 opts.desc = "Inline yank"
 keymap.set("n", "Y", "_y$", opts)
 
+-- Paste
+opts.desc = "Paste text from the cipboard"
+keymap.set("n", "<C-v>", '"+P')
+
 -- Split window
 opts.desc = "Split window below"
 keymap.set("n", "ss", ":split<Return>", opts)
