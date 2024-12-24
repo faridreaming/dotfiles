@@ -1,41 +1,43 @@
-# FARIDREAMING'S Dotfiles
+# Faridreaming's Dotfiles
 
-![Screenshot](assets/images/Screenshot_20241023_230801.png)
+![Screenshot](assets/images/2024-12-24-174930_hyprshot.png)
 
-## Contents
+## Install `yay` (Prerequisite)
 
-- `fish/`: Fish shell configuration.
-- `gitconfig/`: Git configuration.
-- `kitty/`: Kitty terminal configuration.
-- `nvim/`: Neovim configuration.
-
-## Installation Instructions
-
-To install these dotfiles, follow the steps below:
-
-**1. Clone this repository:**
+To install `yay` (AUR helper), run the following commands:
 
 ```bash
-git clone https://github.com/faridreaming/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 ```
 
-**2. Install packages**
+## Dependencies
 
-```bash
-sh packages-setup.sh
-```
+Ensure the following dependencies are installed:
 
-**3. Install Yay**
+1. Neovim\
+   Packages: `neovim xclip`
 
-```bash
-sh yay-setup.sh
-```
+2. Fish\
+    Packages: `fish  starship`\
+    AUR: `ttf-jetbrains-mono-nerd`\
+   Commands:
 
-**4. Setup the rest**
+   ```bash
+   chsh -s /usr/bin/fish
+   starship preset jetpack -o ~/.config/starship.toml
+   ```
 
-```bash
-sh terminal-setup.sh
-sh neovim-setup.sh
-```
+3. Kitty\
+   Packages: `kitty`
+
+4. Fastfetch\
+   Packages: `fastfetch`
+
+5. Vim\
+   Packages: `vim`
+
+6. Hyprland\
+   Packages: `hyprland hypridle hyprlock hyprpaper swaync waybar`
