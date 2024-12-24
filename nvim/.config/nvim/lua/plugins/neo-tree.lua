@@ -1,22 +1,29 @@
 return {
-  "nvim-neo-tree/neo-tree.nvim",
-  dependencies = { "nvim-lua/plenary.nvim" },
-  opts = function()
-    return {
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      sources = { "filesystem", "buffers", "git_status", "document_symbols" },
+      open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
       filesystem = {
-        filtered_items = {
-          hide_dotfiles = false,
+        hide_dotfiles = false,
+        bind_to_cwd = false,
+        follow_current_file = { enabled = true },
+        use_libuv_file_watcher = true,
+      },
+      window = {
+        mappings = {
+          ["<space>"] = "none",
+        },
+        position = "right",
+      },
+      default_component_configs = {
+        indent = {
+          with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
+          expander_collapsed = "",
+          expander_expanded = "",
+          expander_highlight = "NeoTreeExpander",
         },
       },
-      commands = {
-        -- Menambahkan konfigurasi custom untuk command refresh
-        refresh = function()
-          -- Dapatkan modul commands dari filesystem Neo-tree
-          require("neo-tree.sources.filesystem.commands")
-            -- Panggil fungsi refresh dengan state filesystem yang sesuai
-            .refresh(require("neo-tree.sources.manager").get_state("filesystem"))
-        end,
-      },
-    }
-  end,
+    },
+  },
 }
