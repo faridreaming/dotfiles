@@ -19,5 +19,6 @@
     "swap",
     "disk",
     "break",
-  ]
+    "break",
+  ],
 }
