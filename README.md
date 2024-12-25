@@ -23,11 +23,11 @@ Ensure the following dependencies are installed:
 2. Fish\
     Packages: `fish  starship`\
     AUR: `ttf-jetbrains-mono-nerd`\
-   Commands:
+    Commands:
 
    ```bash
    chsh -s /usr/bin/fish
-   starship preset jetpack -o ~/.config/starship.toml
+   starship preset nerd-font-symbols -o ~/.config/starship.toml
    ```
 
 3. Kitty\
@@ -40,4 +40,4 @@ Ensure the following dependencies are installed:
    Packages: `vim`
 
 6. Hyprland\
-   Packages: `hyprland hypridle hyprlock hyprpaper swaync waybar`
+   Packages: `hyprland hypridle hyprlock hyprpaper swaync waybar hyprsunset nemo`
