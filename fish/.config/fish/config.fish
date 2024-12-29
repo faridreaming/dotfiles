@@ -15,6 +15,10 @@ function rebut
     sh ~/scripts/reboot.sh
 end
 
+function lst
+    tree
+end
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
