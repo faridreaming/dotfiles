@@ -1,7 +1,7 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   /*font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
-  font-family: "JetBrains Mono NF", monospace;
+  font-family: "JetBrainsMono NF", monospace;
   font-size: 14px;
 }
 
@@ -97,8 +97,8 @@ button:hover {
   padding: 0 12px;
   color: #ffffff;
   border-radius: 8px;
-  margin: 0 2px;
-  border: 2px solid black;
+  margin: 4px 0;
+  border: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 #window,
